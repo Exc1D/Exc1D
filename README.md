@@ -5,7 +5,8 @@
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=Exc1D&label=Profile views&color=0e75b6&style=flat" alt="Exc1D" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Exc1D" alt="Exc1D" /></a> </p>
-- 💻 Coding since **OCTOBER 2025**
+
+- 💻 Coding since **October 2025**
 
 - 🔭 I'm currently working on **My own blog and portfolio site.**
 
