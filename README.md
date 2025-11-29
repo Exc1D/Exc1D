@@ -30,8 +30,8 @@
 ![GitHub Stats](https://git-hub-stats-card-generator.vercel.app/api/svg?username=Exc1D&theme=dark)
 
 ![Top Languages](https://git-hub-stats-card-generator.vercel.app/api/svg?username=Exc1D&type=languages&theme=dark&chart=pie)
-![Contributions](https://git-hub-stats-card-generator.vercel.app/api/svg?username=Exc1D&type=contributions&theme=dark)
-![Top Repos](https://git-hub-stats-card-generator.vercel.app/api/svg?username=Exc1D&type=top-repos&theme=dark)
+![Contributions](https://git-hub-stats-card-generator.vercel.app/api/svg?username=Exc1D&type=contributions&theme=aura)
+![Top Repos](https://git-hub-stats-card-generator.vercel.app/api/svg?username=Exc1D&type=top-repos&theme=aura)
 
 
 
