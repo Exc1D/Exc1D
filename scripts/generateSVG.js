@@ -23,7 +23,7 @@ export function generateSVG(stats, themeType = "dark") {
     
     <g transform="translate(40, 90)">
       <text class="stat-label" x="0" y="0">📊 Overview</text>
-      <circle cx="80" cy="-5" r="4" fill="#3b82f6"/>
+      <circle cx="80" cy="-5" r="4" fill="var(--primary)"/>
       <text class="badge-text" x="95" y="0">${stats.publicRepos} repos</text>
       <text class="badge-text" x="200" y="0">•</text>
       <text class="badge-text" x="215" y="0">${formatNumber(stats.totalCommits)} commits</text>
@@ -49,11 +49,10 @@ export function generateSVG(stats, themeType = "dark") {
     </g>
   `).join("");
 
-  // Main content grid: Left side (Languages) | Right side (Activity)
-  const languageChart =
-    stats.languages && stats.languages.length > 0
-      ? createDonutChart(160, 480, 90, stats.languages, theme)
-      : `<text class="stat-label" x="160" y="480">No language data</text>`;
+  // Language chart
+  const languageChartContent = stats.languages && stats.languages.length > 0
+    ? createDonutChart(140, 420, 80, stats.languages, theme)
+    : `<text class="stat-label" x="140" y="420">No language data available</text>`;
 
   const languageSection = `
   <g>
@@ -61,13 +60,13 @@ export function generateSVG(stats, themeType = "dark") {
     <g transform="translate(40, 310)">
       <text class="title">💻 Top Languages</text>
     </g>
-    ${languageChart}
+    ${languageChartContent}
   </g>`;
 
-  const streakChart =
-    stats.contributionDays && stats.contributionDays.length > 0
-      ? createStreakChart(620, 330, 540, 100, stats.contributionDays)
-      : `<text class="stat-label" x="640" y="380">No contribution data</text>`;
+  // Contribution chart
+  const streakChartContent = stats.contributionDays && stats.contributionDays.length > 0
+    ? createStreakChart(620, 330, 540, 100, stats.contributionDays)
+    : `<text class="stat-label" x="640" y="380">No contribution data available</text>`;
 
   const activitySection = `
   <g>
@@ -78,9 +77,9 @@ export function generateSVG(stats, themeType = "dark") {
     <g transform="translate(600, 350)">
       <text class="stat-label" x="0" y="0">Last 30 Days Contributions</text>
     </g>
-    ${streakChart}
+    ${streakChartContent}
     
-    <g transform="translate(600, 550)">
+    <g transform="translate(600, 530)">
       <text class="stat-label" x="0" y="0">Contributions</text>
       <text class="stat-value" x="0" y="25">${stats.totalCommits}</text>
       
