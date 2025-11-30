@@ -164,7 +164,7 @@
   <g>
     <rect x="580" y="290" width="600" height="480" fill="var(--card)" stroke="var(--border)" stroke-width="1" rx="12" filter="drop-shadow(0 4px 6px var(--shadow))"/>
     <g transform="translate(600, 310)">
-      <text class="title">📊 Activity & Stats</text>
+      <text class="title">📊 Activity &amp; Stats</text>
     </g>
     <g transform="translate(600, 350)">
       <text class="stat-label" x="0" y="0">Last 30 Days</text>
