@@ -3,6 +3,36 @@ import fetch from "node-fetch";
 const GITHUB_API = "https://api.github.com";
 const GITHUB_GRAPHQL = "https://api.github.com/graphql";
 
+async function fetchWithRetry(url, options, retries = 3) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      const response = await fetch(url, options);
+
+      if (response.status === 403) {
+        const rateLimitReset = response.headers.get("x-ratelimit-reset");
+        if (rateLimitReset) {
+          const resetTime = new Date(parseInt(rateLimitReset) * 1000);
+          throw new Error(
+            `Rate limit exceeded. Resets at ${resetTime.toLocaleString()}`
+          );
+        }
+      }
+
+      if (!response.ok) {
+        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+      }
+
+      return response;
+    } catch (error) {
+      if (i === retries - 1) throw error;
+
+      const delay = Math.pow(2, i) * 1000;
+      console.log(`Retry ${i + 1}/${retries} after ${delay}ms...`);
+      await new Promise((resolve) => setTimeout(resolve, delay));
+    }
+  }
+}
+
 export async function fetchGitHubStats(username, token) {
   const headers = {
     Authorization: `Bearer ${token}`,
@@ -46,10 +76,9 @@ export async function fetchGitHubStats(username, token) {
 }
 
 async function fetchUserData(username, headers) {
-  const response = await fetch(`${GITHUB_API}/users/${username}`, { headers });
-  if (!response.ok) {
-    throw new Error(`Failed to fetch user data: ${response.statusText}`);
-  }
+  const response = await fetchWithRetry(`${GITHUB_API}/users/${username}`, {
+    headers,
+  });
   return await response.json();
 }
 
@@ -59,7 +88,6 @@ async function fetchRepositoryStats(username, headers) {
   let hasMore = true;
 
   while (hasMore && page <= 10) {
-    // Limit to 1000 repos (10 pages)
     const response = await fetchWithRetry(
       `${GITHUB_API}/users/${username}/repos?per_page=100&page=${page}`,
       { headers }
@@ -121,7 +149,6 @@ async function fetchContributionData(username, headers) {
 
   const data = await response.json();
 
-  // Check for GraphQL errors
   if (data.errors) {
     throw new Error(`GraphQL Error: ${data.errors[0].message}`);
   }
@@ -179,48 +206,9 @@ async function fetchLanguageData(username, headers) {
   }));
 }
 
-async function fetchWithRetry(url, options, retries = 3) {
-  for (let i = 0; i < retries; i++) {
-    try {
-      const response = await fetch(url, options);
-
-      if (response.status === 403) {
-        const rateLimitReset = response.headers.get("x-ratelimit-reset");
-        if (rateLimitReset) {
-          const resetTime = new Date(parseInt(rateLimitReset) * 1000);
-          throw new Error(
-            `Rate limit exceeded. Resets at ${resetTime.toLocaleString()}`
-          );
-        }
-      }
-
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-      }
-
-      return response;
-    } catch (error) {
-      if (i === retries - 1) throw error;
-
-      const delay = Math.pow(2, i) * 1000; // Exponential backoff
-      console.log(`Retry ${i + 1}/${retries} after ${delay}ms...`);
-      await new Promise((resolve) => setTimeout(resolve, delay));
-    }
-  }
-}
-
-// Update fetchUserData to use retry logic:
-async function fetchUserData(username, headers) {
-  const response = await fetchWithRetry(`${GITHUB_API}/users/${username}`, {
-    headers,
-  });
-  return await response.json();
-}
-
 function calculateStreak(contributionDays) {
   if (!contributionDays.length) return { current: 0, max: 0 };
 
-  // Sort in ascending order (oldest to newest)
   const sortedDays = [...contributionDays].sort(
     (a, b) => new Date(a.date) - new Date(b.date)
   );
@@ -232,7 +220,6 @@ function calculateStreak(contributionDays) {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
-  // Find current streak (working backwards from today)
   for (let i = sortedDays.length - 1; i >= 0; i--) {
     const dayDate = new Date(sortedDays[i].date);
     dayDate.setHours(0, 0, 0, 0);
@@ -246,14 +233,12 @@ function calculateStreak(contributionDays) {
         break;
       }
     } else if (daysDiff <= 1) {
-      // Allow grace period for today/yesterday
       continue;
     } else {
       break;
     }
   }
 
-  // Calculate max streak
   for (let i = 0; i < sortedDays.length; i++) {
     if (sortedDays[i].contributionCount > 0) {
       tempStreak++;
