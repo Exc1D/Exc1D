@@ -2,8 +2,6 @@
 
 ### Upcoming Full-stack developer
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=Exc1D" alt="Exc1D" /></a> </p>
-
 - 💻 Coding since **October 2025**
 
 - 🔭 I'm currently working on **My own blog and portfolio site.**
