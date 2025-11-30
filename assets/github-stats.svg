@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="900" height="600" viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="800" viewBox="0 0 1000 800" xmlns="http://www.w3.org/2000/svg">
   <style>
     @media (prefers-color-scheme: light) {
       :root {
@@ -66,102 +66,60 @@
       animation: fadeIn 0.8s ease-in;
     }
   </style>
-  <rect width="900" height="600" fill="var(--bg)" rx="10"/>
+  <rect width="1000" height="800" fill="var(--bg)" rx="10"/>
   
     
-  <g transform="translate(20, 20)" class="animated">
+  <g transform="translate(30, 30)" class="animated">
     <rect class="card" width="140" height="60" rx="8"/>
     <text class="badge-icon" x="20" y="28">👥</text>
     <text class="stat-label" x="20" y="48">Followers</text>
     <text class="stat-value" x="115" y="33" text-anchor="end">0</text>
   </g>
-  <g transform="translate(180, 20)" class="animated">
+  <g transform="translate(340, 30)" class="animated">
     <rect class="card" width="140" height="60" rx="8"/>
     <text class="badge-icon" x="20" y="28">⭐</text>
     <text class="stat-label" x="20" y="48">Total Stars</text>
     <text class="stat-value" x="115" y="33" text-anchor="end">4</text>
   </g>
-  <g transform="translate(340, 20)" class="animated">
+  <g transform="translate(650, 30)" class="animated">
     <rect class="card" width="140" height="60" rx="8"/>
     <text class="badge-icon" x="20" y="28">🔀</text>
     <text class="stat-label" x="20" y="48">Total Forks</text>
     <text class="stat-value" x="115" y="33" text-anchor="end">0</text>
   </g>
-  <g transform="translate(20, 100)" class="animated">
+  <g transform="translate(30, 130)" class="animated">
     <rect class="card" width="140" height="60" rx="8"/>
     <text class="badge-icon" x="20" y="28">📦</text>
     <text class="stat-label" x="20" y="48">Repositories</text>
     <text class="stat-value" x="115" y="33" text-anchor="end">20</text>
   </g>
-  <g transform="translate(180, 100)" class="animated">
+  <g transform="translate(340, 130)" class="animated">
     <rect class="card" width="140" height="60" rx="8"/>
     <text class="badge-icon" x="20" y="28">🔥</text>
     <text class="stat-label" x="20" y="48">Streak</text>
     <text class="stat-value" x="115" y="33" text-anchor="end">9 days</text>
   </g>
-  <g transform="translate(340, 100)" class="animated">
+  <g transform="translate(650, 130)" class="animated">
     <rect class="card" width="140" height="60" rx="8"/>
     <text class="badge-icon" x="20" y="28">💻</text>
     <text class="stat-label" x="20" y="48">Commits</text>
-    <text class="stat-value" x="115" y="33" text-anchor="end">155</text>
+    <text class="stat-value" x="115" y="33" text-anchor="end">156</text>
   </g>
     
-  <g transform="translate(20, 200)">
+  <g transform="translate(30, 240)">
     <text class="title" x="0" y="0">🎯 Exc1D's GitHub Stats</text>
     <text class="stat-label" x="0" y="25">Last updated: 11/30/2025</text>
   </g>
-    
-  <g transform="translate(20, 240)">
-    <text class="title" x="0" y="0">💻 Top Languages</text>
-  </g>
-    
-  <g class="animated">
-    
-      <path d="M 120 270 A 80 80 0 1 1 95.27864045000418 426.0845213036123 L 105.16718427000251 395.6507127821674 A 48 48 0 1 0 120 302 Z"
-            fill="#563d7c"
-            opacity="0.9"
-            class="animated">
-        <title>CSS: 55.0%</title>
-      </path>
-      <path d="M 95.27864045000418 426.0845213036123 A 80 80 0 0 1 55.27864045000422 302.97717981660213 L 81.16718427000254 321.7863078899613 A 48 48 0 0 0 105.16718427000251 395.6507127821674 Z"
-            fill="#e34c26"
-            opacity="0.9"
-            class="animated">
-        <title>HTML: 30.0%</title>
-      </path>
-      <path d="M 55.27864045000422 302.97717981660213 A 80 80 0 0 1 119.99999999999999 270 L 119.99999999999999 302 A 48 48 0 0 0 81.16718427000254 321.7863078899613 Z"
-            fill="#f1e05a"
-            opacity="0.9"
-            class="animated">
-        <title>JavaScript: 15.0%</title>
-      </path>
-    
-    <g transform="translate(0, 0)">
-      <circle cx="240" cy="290" r="6" fill="#563d7c"/>
-      <text x="255" y="295" class="stat-label">CSS</text>
-      <text x="380" y="295" class="stat-value" text-anchor="end">55.0%</text>
+    <g transform="translate(400, 250)">
+      <text class="stat-label" x="0" y="0">Last 30 Days Activity</text>
     </g>
-  
-    <g transform="translate(0, 25)">
-      <circle cx="240" cy="315" r="6" fill="#e34c26"/>
-      <text x="255" y="320" class="stat-label">HTML</text>
-      <text x="380" y="320" class="stat-value" text-anchor="end">30.0%</text>
-    </g>
-  
-    <g transform="translate(0, 50)">
-      <circle cx="240" cy="340" r="6" fill="#f1e05a"/>
-      <text x="255" y="345" class="stat-label">JavaScript</text>
-      <text x="380" y="345" class="stat-value" text-anchor="end">15.0%</text>
-    </g>
-  
-  </g>
     
   <g>
-    <text class="stat-label" x="500" y="220">Last 30 Days Activity</text>
+    <text class="stat-label" x="400" y="270">Last 30 Days Activity</text>
     
-      <rect x="500" 
-            y="330" 
-            width="10" 
+      <rect x="400" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -169,9 +127,9 @@
             class="animated">
         <title>2024-12-30: 0 contributions</title>
       </rect>
-      <rect x="512" 
-            y="330" 
-            width="10" 
+      <rect x="418.6666666666667" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -179,9 +137,9 @@
             class="animated">
         <title>2024-12-29: 0 contributions</title>
       </rect>
-      <rect x="524" 
-            y="330" 
-            width="10" 
+      <rect x="437.3333333333333" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -189,9 +147,9 @@
             class="animated">
         <title>2024-12-28: 0 contributions</title>
       </rect>
-      <rect x="536" 
-            y="330" 
-            width="10" 
+      <rect x="456" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -199,9 +157,9 @@
             class="animated">
         <title>2024-12-27: 0 contributions</title>
       </rect>
-      <rect x="548" 
-            y="330" 
-            width="10" 
+      <rect x="474.6666666666667" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -209,9 +167,9 @@
             class="animated">
         <title>2024-12-26: 0 contributions</title>
       </rect>
-      <rect x="560" 
-            y="330" 
-            width="10" 
+      <rect x="493.33333333333337" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -219,9 +177,9 @@
             class="animated">
         <title>2024-12-25: 0 contributions</title>
       </rect>
-      <rect x="572" 
-            y="330" 
-            width="10" 
+      <rect x="512" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -229,9 +187,9 @@
             class="animated">
         <title>2024-12-24: 0 contributions</title>
       </rect>
-      <rect x="584" 
-            y="330" 
-            width="10" 
+      <rect x="530.6666666666667" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -239,9 +197,9 @@
             class="animated">
         <title>2024-12-23: 0 contributions</title>
       </rect>
-      <rect x="596" 
-            y="330" 
-            width="10" 
+      <rect x="549.3333333333334" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -249,9 +207,9 @@
             class="animated">
         <title>2024-12-22: 0 contributions</title>
       </rect>
-      <rect x="608" 
-            y="330" 
-            width="10" 
+      <rect x="568" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -259,9 +217,9 @@
             class="animated">
         <title>2024-12-21: 0 contributions</title>
       </rect>
-      <rect x="620" 
-            y="330" 
-            width="10" 
+      <rect x="586.6666666666667" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -269,9 +227,9 @@
             class="animated">
         <title>2024-12-20: 0 contributions</title>
       </rect>
-      <rect x="632" 
-            y="330" 
-            width="10" 
+      <rect x="605.3333333333334" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -279,9 +237,9 @@
             class="animated">
         <title>2024-12-19: 0 contributions</title>
       </rect>
-      <rect x="644" 
-            y="330" 
-            width="10" 
+      <rect x="624" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -289,9 +247,9 @@
             class="animated">
         <title>2024-12-18: 0 contributions</title>
       </rect>
-      <rect x="656" 
-            y="330" 
-            width="10" 
+      <rect x="642.6666666666667" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -299,9 +257,9 @@
             class="animated">
         <title>2024-12-17: 0 contributions</title>
       </rect>
-      <rect x="668" 
-            y="330" 
-            width="10" 
+      <rect x="661.3333333333334" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -310,8 +268,8 @@
         <title>2024-12-16: 0 contributions</title>
       </rect>
       <rect x="680" 
-            y="330" 
-            width="10" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -319,9 +277,9 @@
             class="animated">
         <title>2024-12-15: 0 contributions</title>
       </rect>
-      <rect x="692" 
-            y="330" 
-            width="10" 
+      <rect x="698.6666666666667" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -329,9 +287,9 @@
             class="animated">
         <title>2024-12-14: 0 contributions</title>
       </rect>
-      <rect x="704" 
-            y="330" 
-            width="10" 
+      <rect x="717.3333333333334" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -339,9 +297,9 @@
             class="animated">
         <title>2024-12-13: 0 contributions</title>
       </rect>
-      <rect x="716" 
-            y="330" 
-            width="10" 
+      <rect x="736" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -349,9 +307,9 @@
             class="animated">
         <title>2024-12-12: 0 contributions</title>
       </rect>
-      <rect x="728" 
-            y="330" 
-            width="10" 
+      <rect x="754.6666666666667" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -359,9 +317,9 @@
             class="animated">
         <title>2024-12-11: 0 contributions</title>
       </rect>
-      <rect x="740" 
-            y="330" 
-            width="10" 
+      <rect x="773.3333333333334" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -369,9 +327,9 @@
             class="animated">
         <title>2024-12-10: 0 contributions</title>
       </rect>
-      <rect x="752" 
-            y="330" 
-            width="10" 
+      <rect x="792" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -379,9 +337,9 @@
             class="animated">
         <title>2024-12-09: 0 contributions</title>
       </rect>
-      <rect x="764" 
-            y="330" 
-            width="10" 
+      <rect x="810.6666666666667" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -389,9 +347,9 @@
             class="animated">
         <title>2024-12-08: 0 contributions</title>
       </rect>
-      <rect x="776" 
-            y="330" 
-            width="10" 
+      <rect x="829.3333333333334" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -399,9 +357,9 @@
             class="animated">
         <title>2024-12-07: 0 contributions</title>
       </rect>
-      <rect x="788" 
-            y="330" 
-            width="10" 
+      <rect x="848" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -409,9 +367,9 @@
             class="animated">
         <title>2024-12-06: 0 contributions</title>
       </rect>
-      <rect x="800" 
-            y="330" 
-            width="10" 
+      <rect x="866.6666666666667" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -419,9 +377,9 @@
             class="animated">
         <title>2024-12-05: 0 contributions</title>
       </rect>
-      <rect x="812" 
-            y="330" 
-            width="10" 
+      <rect x="885.3333333333334" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -429,9 +387,9 @@
             class="animated">
         <title>2024-12-04: 0 contributions</title>
       </rect>
-      <rect x="824" 
-            y="330" 
-            width="10" 
+      <rect x="904" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -439,9 +397,9 @@
             class="animated">
         <title>2024-12-03: 0 contributions</title>
       </rect>
-      <rect x="836" 
-            y="330" 
-            width="10" 
+      <rect x="922.6666666666667" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -449,9 +407,9 @@
             class="animated">
         <title>2024-12-02: 0 contributions</title>
       </rect>
-      <rect x="848" 
-            y="330" 
-            width="10" 
+      <rect x="941.3333333333334" 
+            y="360" 
+            width="16.666666666666668" 
             height="0" 
             fill="var(--accent)" 
             opacity="0.2"
@@ -461,21 +419,66 @@
       </rect>
   </g>
     
-  <g transform="translate(500, 350)" class="animated">
-    <rect class="card" width="380" height="220" rx="10"/>
+  <g transform="translate(30, 290)">
+    <text class="title" x="0" y="0">💻 Top Languages</text>
+  </g>
+    
+  <g class="animated">
+    
+      <path d="M 80 350 A 70 70 0 1 1 58.368810393753655 486.57395614066075 L 67.0212862362522 459.94437368439645 A 42 42 0 1 0 80 378 Z"
+            fill="#563d7c"
+            opacity="0.9"
+            class="animated">
+        <title>CSS: 55.0%</title>
+      </path>
+      <path d="M 58.368810393753655 486.57395614066075 A 70 70 0 0 1 23.36881039375369 378.8550323395269 L 46.021286236252216 395.3130194037161 A 42 42 0 0 0 67.0212862362522 459.94437368439645 Z"
+            fill="#e34c26"
+            opacity="0.9"
+            class="animated">
+        <title>HTML: 30.0%</title>
+      </path>
+      <path d="M 23.36881039375369 378.8550323395269 A 70 70 0 0 1 79.99999999999999 350 L 79.99999999999999 378 A 42 42 0 0 0 46.021286236252216 395.3130194037161 Z"
+            fill="#f1e05a"
+            opacity="0.9"
+            class="animated">
+        <title>JavaScript: 15.0%</title>
+      </path>
+    
+    <g transform="translate(0, 0)">
+      <circle cx="190" cy="360" r="6" fill="#563d7c"/>
+      <text x="205" y="365" class="stat-label">CSS</text>
+      <text x="330" y="365" class="stat-value" text-anchor="end">55.0%</text>
+    </g>
+  
+    <g transform="translate(0, 25)">
+      <circle cx="190" cy="385" r="6" fill="#e34c26"/>
+      <text x="205" y="390" class="stat-label">HTML</text>
+      <text x="330" y="390" class="stat-value" text-anchor="end">30.0%</text>
+    </g>
+  
+    <g transform="translate(0, 50)">
+      <circle cx="190" cy="410" r="6" fill="#f1e05a"/>
+      <text x="205" y="415" class="stat-label">JavaScript</text>
+      <text x="330" y="415" class="stat-value" text-anchor="end">15.0%</text>
+    </g>
+  
+  </g>
+    
+  <g transform="translate(30, 520)" class="animated">
+    <rect class="card" width="940" height="250" rx="10"/>
     <text class="title" x="20" y="35">📊 Additional Stats</text>
     
     <text class="stat-label" x="20" y="60">Issues Created</text>
-    <text class="stat-value" x="360" y="60" text-anchor="end">2</text>
+    <text class="stat-value" x="920" y="60" text-anchor="end">2</text>
   
     <text class="stat-label" x="20" y="95">Pull Requests</text>
-    <text class="stat-value" x="360" y="95" text-anchor="end">2</text>
+    <text class="stat-value" x="920" y="95" text-anchor="end">2</text>
   
     <text class="stat-label" x="20" y="130">Max Streak</text>
-    <text class="stat-value" x="360" y="130" text-anchor="end">9 days</text>
+    <text class="stat-value" x="920" y="130" text-anchor="end">9 days</text>
   
     <text class="stat-label" x="20" y="165">Following</text>
-    <text class="stat-value" x="360" y="165" text-anchor="end">0</text>
+    <text class="stat-value" x="920" y="165" text-anchor="end">0</text>
   
   </g>
   
