@@ -79,7 +79,7 @@
       <circle cx="80" cy="-5" r="4" fill="var(--primary)"/>
       <text class="badge-text" x="95" y="0">20 repos</text>
       <text class="badge-text" x="200" y="0">•</text>
-      <text class="badge-text" x="215" y="0">158 commits</text>
+      <text class="badge-text" x="215" y="0">159 commits</text>
       <text class="badge-text" x="350" y="0">•</text>
       <text class="badge-text" x="365" y="0">0 followers</text>
     </g>
@@ -91,28 +91,27 @@
       <text class="stat-label" x="20" y="62">Total Stars</text>
       <text class="stat-value" x="240" y="40" text-anchor="end">4</text>
     </g>
-  
+    
     <g transform="translate(320, 180)">
       <rect class="card" width="260" height="80" rx="8"/>
       <text class="badge-icon" x="20" y="35">🔀</text>
       <text class="stat-label" x="20" y="62">Total Forks</text>
       <text class="stat-value" x="240" y="40" text-anchor="end">0</text>
     </g>
-  
+    
     <g transform="translate(600, 180)">
       <rect class="card" width="260" height="80" rx="8"/>
       <text class="badge-icon" x="20" y="35">🔥</text>
       <text class="stat-label" x="20" y="62">Streak</text>
       <text class="stat-value" x="240" y="40" text-anchor="end">9 days</text>
     </g>
-  
+    
     <g transform="translate(880, 180)">
       <rect class="card" width="260" height="80" rx="8"/>
       <text class="badge-icon" x="20" y="35">📈</text>
       <text class="stat-label" x="20" y="62">Max Streak</text>
       <text class="stat-value" x="240" y="40" text-anchor="end">9 days</text>
     </g>
-  
     
   <g>
     <rect x="20" y="290" width="540" height="480" fill="var(--card)" stroke="var(--border)" stroke-width="1" rx="12" filter="drop-shadow(0 4px 6px var(--shadow))"/>
@@ -168,7 +167,7 @@
       <text class="title">📊 Activity & Stats</text>
     </g>
     <g transform="translate(600, 350)">
-      <text class="stat-label" x="0" y="0">Last 30 Days Contributions</text>
+      <text class="stat-label" x="0" y="0">Last 30 Days</text>
     </g>
     
   <g>
@@ -478,7 +477,7 @@
     
     <g transform="translate(600, 530)">
       <text class="stat-label" x="0" y="0">Contributions</text>
-      <text class="stat-value" x="0" y="25">158</text>
+      <text class="stat-value" x="0" y="25">159</text>
       
       <text class="stat-label" x="150" y="0">Issues</text>
       <text class="stat-value" x="150" y="25">2</text>
@@ -495,10 +494,10 @@
     <rect x="20" y="790" width="1160" height="80" fill="var(--card)" stroke="var(--border)" stroke-width="1" rx="12" filter="drop-shadow(0 4px 6px var(--shadow))"/>
     <g transform="translate(40, 810)">
       <text class="title" style="font-size: 14px;">📈 Summary</text>
-      <text class="badge-text" x="0" y="30">Total Repositories: 20</text>
-      <text class="badge-text" x="300" y="30">Public Stars: 4</text>
-      <text class="badge-text" x="600" y="30">Total Forks: 0</text>
-      <text class="badge-text" x="900" y="30">Current Streak: 9 days</text>
+      <text class="badge-text" x="0" y="30">Repositories: 20</text>
+      <text class="badge-text" x="300" y="30">Stars: 4</text>
+      <text class="badge-text" x="600" y="30">Forks: 0</text>
+      <text class="badge-text" x="900" y="30">Streak: 9 days</text>
     </g>
   </g>
   
