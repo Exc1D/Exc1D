@@ -359,7 +359,7 @@ class GitHubStatsGenerator:
   
   <!-- Footer -->
   <text x="400" y="580" text-anchor="middle" class="stat-label">
-    Generated with ❤️ by GitHub Stats Generator
+    Made with ❤️ by GitHub Stats Generator
   </text>
 </svg>'''
         
