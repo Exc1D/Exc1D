@@ -77,9 +77,9 @@
     <g transform="translate(40, 90)">
       <text class="stat-label" x="0" y="0">📊 Overview</text>
       <circle cx="80" cy="-5" r="4" fill="var(--primary)"/>
-      <text class="badge-text" x="95" y="0">20 repos</text>
+      <text class="badge-text" x="95" y="0">19 repos</text>
       <text class="badge-text" x="200" y="0">•</text>
-      <text class="badge-text" x="215" y="0">159 commits</text>
+      <text class="badge-text" x="215" y="0">158 commits</text>
       <text class="badge-text" x="350" y="0">•</text>
       <text class="badge-text" x="365" y="0">0 followers</text>
     </g>
@@ -89,7 +89,7 @@
       <rect class="card" width="260" height="80" rx="8"/>
       <text class="badge-icon" x="20" y="35">⭐</text>
       <text class="stat-label" x="20" y="62">Total Stars</text>
-      <text class="stat-value" x="240" y="40" text-anchor="end">4</text>
+      <text class="stat-value" x="240" y="40" text-anchor="end">3</text>
     </g>
     
     <g transform="translate(320, 180)">
@@ -121,41 +121,41 @@
     
   <g class="animated">
     
-      <path d="M 140 340 A 80 80 0 1 1 115.27864045000418 496.0845213036123 L 125.16718427000251 465.6507127821674 A 48 48 0 1 0 140 372 Z"
+      <path d="M 140 340 A 80 80 0 1 1 101.90094370656486 490.3453048152445 L 117.14056622393892 462.2071828891467 A 48 48 0 1 0 140 372 Z"
             fill="#563d7c"
             opacity="0.9"
             class="animated">
-        <title>CSS: 55.0%</title>
+        <title>CSS: 57.9%</title>
       </path>
-      <path d="M 115.27864045000418 496.0845213036123 A 80 80 0 0 1 75.27864045000422 372.97717981660213 L 101.16718427000254 391.7863078899613 A 48 48 0 0 0 125.16718427000251 465.6507127821674 Z"
+      <path d="M 101.90094370656486 490.3453048152445 A 80 80 0 0 1 90.96743570776188 356.78759900994476 L 110.58046142465713 382.07255940596684 A 48 48 0 0 0 117.14056622393892 462.2071828891467 Z"
             fill="#e34c26"
             opacity="0.9"
             class="animated">
-        <title>HTML: 30.0%</title>
+        <title>HTML: 31.6%</title>
       </path>
-      <path d="M 75.27864045000422 372.97717981660213 A 80 80 0 0 1 139.99999999999997 340 L 140 372 A 48 48 0 0 0 101.16718427000254 391.7863078899613 Z"
+      <path d="M 90.96743570776188 356.78759900994476 A 80 80 0 0 1 139.99999999999997 340 L 140 372 A 48 48 0 0 0 110.58046142465713 382.07255940596684 Z"
             fill="#f1e05a"
             opacity="0.9"
             class="animated">
-        <title>JavaScript: 15.0%</title>
+        <title>JavaScript: 10.5%</title>
       </path>
     
     <g transform="translate(0, 0)">
       <circle cx="260" cy="360" r="6" fill="#563d7c"/>
       <text x="275" y="365" class="stat-label">CSS</text>
-      <text x="400" y="365" class="stat-value" text-anchor="end">55.0%</text>
+      <text x="400" y="365" class="stat-value" text-anchor="end">57.9%</text>
     </g>
   
     <g transform="translate(0, 25)">
       <circle cx="260" cy="385" r="6" fill="#e34c26"/>
       <text x="275" y="390" class="stat-label">HTML</text>
-      <text x="400" y="390" class="stat-value" text-anchor="end">30.0%</text>
+      <text x="400" y="390" class="stat-value" text-anchor="end">31.6%</text>
     </g>
   
     <g transform="translate(0, 50)">
       <circle cx="260" cy="410" r="6" fill="#f1e05a"/>
       <text x="275" y="415" class="stat-label">JavaScript</text>
-      <text x="400" y="415" class="stat-value" text-anchor="end">15.0%</text>
+      <text x="400" y="415" class="stat-value" text-anchor="end">10.5%</text>
     </g>
   
   </g>
@@ -477,7 +477,7 @@
     
     <g transform="translate(600, 530)">
       <text class="stat-label" x="0" y="0">Contributions</text>
-      <text class="stat-value" x="0" y="25">159</text>
+      <text class="stat-value" x="0" y="25">158</text>
       
       <text class="stat-label" x="150" y="0">Issues</text>
       <text class="stat-value" x="150" y="25">2</text>
@@ -494,8 +494,8 @@
     <rect x="20" y="790" width="1160" height="80" fill="var(--card)" stroke="var(--border)" stroke-width="1" rx="12" filter="drop-shadow(0 4px 6px var(--shadow))"/>
     <g transform="translate(40, 810)">
       <text class="title" style="font-size: 14px;">📈 Summary</text>
-      <text class="badge-text" x="0" y="30">Repositories: 20</text>
-      <text class="badge-text" x="300" y="30">Stars: 4</text>
+      <text class="badge-text" x="0" y="30">Repositories: 19</text>
+      <text class="badge-text" x="300" y="30">Stars: 3</text>
       <text class="badge-text" x="600" y="30">Forks: 0</text>
       <text class="badge-text" x="900" y="30">Streak: 9 days</text>
     </g>
