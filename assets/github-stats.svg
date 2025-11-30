@@ -76,10 +76,10 @@
     
     <g transform="translate(40, 90)">
       <text class="stat-label" x="0" y="0">📊 Overview</text>
-      <circle cx="80" cy="-5" r="4" fill="#3b82f6"/>
+      <circle cx="80" cy="-5" r="4" fill="var(--primary)"/>
       <text class="badge-text" x="95" y="0">20 repos</text>
       <text class="badge-text" x="200" y="0">•</text>
-      <text class="badge-text" x="215" y="0">157 commits</text>
+      <text class="badge-text" x="215" y="0">158 commits</text>
       <text class="badge-text" x="350" y="0">•</text>
       <text class="badge-text" x="365" y="0">0 followers</text>
     </g>
@@ -122,19 +122,19 @@
     
   <g class="animated">
     
-      <path d="M 160 390 A 90 90 0 1 1 132.1884705062547 565.5950864665638 L 143.31308230375282 531.3570518799382 A 54 54 0 1 0 160 426 Z"
+      <path d="M 140 340 A 80 80 0 1 1 115.27864045000418 496.0845213036123 L 125.16718427000251 465.6507127821674 A 48 48 0 1 0 140 372 Z"
             fill="#563d7c"
             opacity="0.9"
             class="animated">
         <title>CSS: 55.0%</title>
       </path>
-      <path d="M 132.1884705062547 565.5950864665638 A 90 90 0 0 1 87.18847050625475 427.0993272936774 L 116.31308230375285 448.25959637620645 A 54 54 0 0 0 143.31308230375282 531.3570518799382 Z"
+      <path d="M 115.27864045000418 496.0845213036123 A 80 80 0 0 1 75.27864045000422 372.97717981660213 L 101.16718427000254 391.7863078899613 A 48 48 0 0 0 125.16718427000251 465.6507127821674 Z"
             fill="#e34c26"
             opacity="0.9"
             class="animated">
         <title>HTML: 30.0%</title>
       </path>
-      <path d="M 87.18847050625475 427.0993272936774 A 90 90 0 0 1 159.99999999999997 390 L 160 426 A 54 54 0 0 0 116.31308230375285 448.25959637620645 Z"
+      <path d="M 75.27864045000422 372.97717981660213 A 80 80 0 0 1 139.99999999999997 340 L 140 372 A 48 48 0 0 0 101.16718427000254 391.7863078899613 Z"
             fill="#f1e05a"
             opacity="0.9"
             class="animated">
@@ -142,21 +142,21 @@
       </path>
     
     <g transform="translate(0, 0)">
-      <circle cx="290" cy="420" r="6" fill="#563d7c"/>
-      <text x="305" y="425" class="stat-label">CSS</text>
-      <text x="430" y="425" class="stat-value" text-anchor="end">55.0%</text>
+      <circle cx="260" cy="360" r="6" fill="#563d7c"/>
+      <text x="275" y="365" class="stat-label">CSS</text>
+      <text x="400" y="365" class="stat-value" text-anchor="end">55.0%</text>
     </g>
   
     <g transform="translate(0, 25)">
-      <circle cx="290" cy="445" r="6" fill="#e34c26"/>
-      <text x="305" y="450" class="stat-label">HTML</text>
-      <text x="430" y="450" class="stat-value" text-anchor="end">30.0%</text>
+      <circle cx="260" cy="385" r="6" fill="#e34c26"/>
+      <text x="275" y="390" class="stat-label">HTML</text>
+      <text x="400" y="390" class="stat-value" text-anchor="end">30.0%</text>
     </g>
   
     <g transform="translate(0, 50)">
-      <circle cx="290" cy="470" r="6" fill="#f1e05a"/>
-      <text x="305" y="475" class="stat-label">JavaScript</text>
-      <text x="430" y="475" class="stat-value" text-anchor="end">15.0%</text>
+      <circle cx="260" cy="410" r="6" fill="#f1e05a"/>
+      <text x="275" y="415" class="stat-label">JavaScript</text>
+      <text x="400" y="415" class="stat-value" text-anchor="end">15.0%</text>
     </g>
   
   </g>
@@ -476,9 +476,9 @@
       </rect>
   </g>
     
-    <g transform="translate(600, 550)">
+    <g transform="translate(600, 530)">
       <text class="stat-label" x="0" y="0">Contributions</text>
-      <text class="stat-value" x="0" y="25">157</text>
+      <text class="stat-value" x="0" y="25">158</text>
       
       <text class="stat-label" x="150" y="0">Issues</text>
       <text class="stat-value" x="150" y="25">2</text>
