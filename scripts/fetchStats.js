@@ -54,20 +54,35 @@ async function fetchUserData(username, headers) {
 }
 
 async function fetchRepositoryStats(username, headers) {
-  const response = await fetch(
-    `${GITHUB_API}/users/${username}/repos?per_page=100`,
-    { headers }
-  );
-  if (!response.ok) {
-    throw new Error(`Failed to fetch repository data: ${response.statusText}`);
+  let page = 1;
+  let allRepos = [];
+  let hasMore = true;
+
+  while (hasMore && page <= 10) {
+    // Limit to 1000 repos (10 pages)
+    const response = await fetchWithRetry(
+      `${GITHUB_API}/users/${username}/repos?per_page=100&page=${page}`,
+      { headers }
+    );
+
+    const repos = await response.json();
+
+    if (repos.length === 0) {
+      hasMore = false;
+    } else {
+      allRepos = allRepos.concat(repos);
+      page++;
+    }
   }
 
-  const repos = await response.json();
-  const totalStars = repos.reduce(
-    (sum, repo) => sum + repo.stargazers_count,
+  const totalStars = allRepos.reduce(
+    (sum, repo) => sum + (repo.stargazers_count || 0),
     0
   );
-  const totalForks = repos.reduce((sum, repo) => sum + repo.forks_count, 0);
+  const totalForks = allRepos.reduce(
+    (sum, repo) => sum + (repo.forks_count || 0),
+    0
+  );
 
   return { totalStars, totalForks };
 }
