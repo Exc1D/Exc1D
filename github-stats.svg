@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#161b22;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Card glassmorphism effect -->
+    <filter id="glass">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+    </filter>
+    
+    <!-- Glow effect -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Title gradient -->
+    <linearGradient id="titleGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#58a6ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f778ba;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7ee787;stop-opacity:1" />
+    </linearGradient>
+    
+    <style>
+      .header { font: 600 28px 'Segoe UI', Ubuntu, sans-serif; fill: url(#titleGradient); }
+      .stat-label { font: 400 14px 'Segoe UI', Ubuntu, sans-serif; fill: #8b949e; }
+      .stat-value { font: 700 24px 'Segoe UI', Ubuntu, sans-serif; fill: #c9d1d9; }
+      .lang-name { font: 500 13px 'Segoe UI', Ubuntu, sans-serif; fill: #c9d1d9; }
+      .lang-percent { font: 600 12px 'Segoe UI', Ubuntu, sans-serif; fill: #8b949e; }
+      .section-title { font: 600 18px 'Segoe UI', Ubuntu, sans-serif; fill: #58a6ff; }
+      
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
+      .stat-card {
+        animation: fadeIn 0.6s ease-out forwards;
+        opacity: 0;
+      }
+      
+      .stat-card:nth-child(1) { animation-delay: 0.1s; }
+      .stat-card:nth-child(2) { animation-delay: 0.2s; }
+      .stat-card:nth-child(3) { animation-delay: 0.3s; }
+      .stat-card:nth-child(4) { animation-delay: 0.4s; }
+    </style>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bgGradient)" rx="10"/>
+  
+  <!-- Header -->
+  <text x="40" y="50" class="header">⭐ David Aviado's GitHub Stats</text>
+  
+  <!-- Main Stats Grid -->
+  <g class="stat-card">
+    <!-- Total Commits -->
+    <rect x="40" y="80" width="170" height="100" fill="rgba(22, 27, 34, 0.8)" stroke="rgba(88, 166, 255, 0.2)" stroke-width="1.5" rx="12" opacity="0.9"/>
+    <text x="125" y="110" text-anchor="middle" class="stat-label">📝 Total Commits</text>
+    <text x="125" y="145" text-anchor="middle" class="stat-value">197</text>
+  </g>
+  
+  <g class="stat-card">
+    <!-- Repositories -->
+    <rect x="220" y="80" width="170" height="100" fill="rgba(22, 27, 34, 0.8)" stroke="rgba(88, 166, 255, 0.2)" stroke-width="1.5" rx="12" opacity="0.9"/>
+    <text x="305" y="110" text-anchor="middle" class="stat-label">📦 Repositories</text>
+    <text x="305" y="145" text-anchor="middle" class="stat-value">19</text>
+  </g>
+  
+  <g class="stat-card">
+    <!-- Stars -->
+    <rect x="400" y="80" width="170" height="100" fill="rgba(22, 27, 34, 0.8)" stroke="rgba(88, 166, 255, 0.2)" stroke-width="1.5" rx="12" opacity="0.9"/>
+    <text x="485" y="110" text-anchor="middle" class="stat-label">⭐ Total Stars</text>
+    <text x="485" y="145" text-anchor="middle" class="stat-value">3</text>
+  </g>
+  
+  <g class="stat-card">
+    <!-- Followers -->
+    <rect x="580" y="80" width="170" height="100" fill="rgba(22, 27, 34, 0.8)" stroke="rgba(88, 166, 255, 0.2)" stroke-width="1.5" rx="12" opacity="0.9"/>
+    <text x="665" y="110" text-anchor="middle" class="stat-label">👥 Followers</text>
+    <text x="665" y="145" text-anchor="middle" class="stat-value">0</text>
+  </g>
+  
+  <!-- Streak Section -->
+  <text x="40" y="220" class="section-title">🔥 Contribution Streaks</text>
+  
+  <rect x="40" y="235" width="350" height="120" fill="rgba(22, 27, 34, 0.8)" stroke="rgba(88, 166, 255, 0.2)" stroke-width="1.5" rx="12" opacity="0.9"/>
+  
+  <!-- Current Streak -->
+  <text x="60" y="270" class="stat-label">Current Streak</text>
+  <text x="60" y="300" class="stat-value" fill="#7ee787">0 days</text>
+  
+  <!-- Longest Streak -->
+  <text x="60" y="330" class="stat-label">Longest Streak</text>
+  <text x="60" y="360" class="stat-value" fill="#f778ba">9 days</text>
+  
+  <!-- Top Languages -->
+  <text x="410" y="220" class="section-title">💻 Top Languages</text>
+  
+  <rect x="410" y="235" width="350" height="310" fill="rgba(22, 27, 34, 0.8)" stroke="rgba(88, 166, 255, 0.2)" stroke-width="1.5" rx="12" opacity="0.9"/>
+
+  <!-- CSS -->
+  <text x="430" y="270" class="lang-name">CSS</text>
+  <text x="740" y="270" text-anchor="end" class="lang-percent">57.9%</text>
+  
+  <!-- Progress bar background -->
+  <rect x="430" y="278" width="280" height="8" fill="rgba(139, 148, 158, 0.2)" rx="4"/>
+  <!-- Progress bar fill -->
+  <rect x="430" y="278" width="162.10526315789474" height="8" fill="#858585" rx="4">
+    <animate attributeName="width" from="0" to="162.10526315789474" dur="1s" fill="freeze"/>
+  </rect>
+
+  <!-- HTML -->
+  <text x="430" y="320" class="lang-name">HTML</text>
+  <text x="740" y="320" text-anchor="end" class="lang-percent">31.6%</text>
+  
+  <!-- Progress bar background -->
+  <rect x="430" y="328" width="280" height="8" fill="rgba(139, 148, 158, 0.2)" rx="4"/>
+  <!-- Progress bar fill -->
+  <rect x="430" y="328" width="88.42105263157895" height="8" fill="#858585" rx="4">
+    <animate attributeName="width" from="0" to="88.42105263157895" dur="1s" fill="freeze"/>
+  </rect>
+
+  <!-- Python -->
+  <text x="430" y="370" class="lang-name">Python</text>
+  <text x="740" y="370" text-anchor="end" class="lang-percent">5.3%</text>
+  
+  <!-- Progress bar background -->
+  <rect x="430" y="378" width="280" height="8" fill="rgba(139, 148, 158, 0.2)" rx="4"/>
+  <!-- Progress bar fill -->
+  <rect x="430" y="378" width="14.736842105263158" height="8" fill="#3572A5" rx="4">
+    <animate attributeName="width" from="0" to="14.736842105263158" dur="1s" fill="freeze"/>
+  </rect>
+
+  <!-- JavaScript -->
+  <text x="430" y="420" class="lang-name">JavaScript</text>
+  <text x="740" y="420" text-anchor="end" class="lang-percent">5.3%</text>
+  
+  <!-- Progress bar background -->
+  <rect x="430" y="428" width="280" height="8" fill="rgba(139, 148, 158, 0.2)" rx="4"/>
+  <!-- Progress bar fill -->
+  <rect x="430" y="428" width="14.736842105263158" height="8" fill="#f1e05a" rx="4">
+    <animate attributeName="width" from="0" to="14.736842105263158" dur="1s" fill="freeze"/>
+  </rect>
+
+  
+  <!-- Activity Section -->
+  <text x="40" y="385" class="section-title">📊 Recent Activity</text>
+  
+  <rect x="40" y="400" width="350" height="145" fill="rgba(22, 27, 34, 0.8)" stroke="rgba(88, 166, 255, 0.2)" stroke-width="1.5" rx="12" opacity="0.9"/>
+  
+  <!-- Mini contribution graph placeholder -->
+  <text x="60" y="430" class="stat-label">Contribution Graph</text>
+  <rect x="60" y="450" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="60" y="462" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="60" y="474" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="60" y="486" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="60" y="498" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="60" y="510" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="60" y="522" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="72" y="450" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="72" y="462" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="72" y="474" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="72" y="486" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="72" y="498" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="72" y="510" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="72" y="522" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="84" y="450" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="84" y="462" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="84" y="474" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="84" y="486" width="8" height="8" fill="#7ee787" opacity="0.6000000000000001" rx="2"/>
+  <rect x="84" y="498" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="84" y="510" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="84" y="522" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="96" y="450" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="96" y="462" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="96" y="474" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="96" y="486" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="96" y="498" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="96" y="510" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="96" y="522" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="108" y="450" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="108" y="462" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="108" y="474" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="108" y="486" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="108" y="498" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="108" y="510" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="108" y="522" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="120" y="450" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="120" y="462" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="120" y="474" width="8" height="8" fill="#7ee787" opacity="0.6000000000000001" rx="2"/>
+  <rect x="120" y="486" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="120" y="498" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="120" y="510" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="120" y="522" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="132" y="450" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="132" y="462" width="8" height="8" fill="#7ee787" opacity="0.6000000000000001" rx="2"/>
+  <rect x="132" y="474" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="132" y="486" width="8" height="8" fill="#7ee787" opacity="0.6000000000000001" rx="2"/>
+  <rect x="132" y="498" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="132" y="510" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="132" y="522" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="144" y="450" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="144" y="462" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="144" y="474" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="144" y="486" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="144" y="498" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="144" y="510" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="144" y="522" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="156" y="450" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="156" y="462" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="156" y="474" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="156" y="486" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="156" y="498" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="156" y="510" width="8" height="8" fill="#7ee787" opacity="0.6000000000000001" rx="2"/>
+  <rect x="156" y="522" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="168" y="450" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="168" y="462" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="168" y="474" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="168" y="486" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="168" y="498" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="168" y="510" width="8" height="8" fill="#7ee787" opacity="1.0" rx="2"/>
+  <rect x="168" y="522" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="180" y="450" width="8" height="8" fill="#7ee787" opacity="0.6000000000000001" rx="2"/>
+  <rect x="180" y="462" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="180" y="474" width="8" height="8" fill="#7ee787" opacity="0.6000000000000001" rx="2"/>
+  <rect x="180" y="486" width="8" height="8" fill="#7ee787" opacity="0.6000000000000001" rx="2"/>
+  <rect x="180" y="498" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="180" y="510" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="180" y="522" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="192" y="450" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="192" y="462" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="192" y="474" width="8" height="8" fill="#7ee787" opacity="0.6000000000000001" rx="2"/>
+  <rect x="192" y="486" width="8" height="8" fill="#7ee787" opacity="0.2" rx="2"/>
+  <rect x="192" y="498" width="8" height="8" fill="#7ee787" opacity="0.8" rx="2"/>
+  <rect x="192" y="510" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+  <rect x="192" y="522" width="8" height="8" fill="#7ee787" opacity="0.4" rx="2"/>
+
+  
+  <!-- Footer -->
+  <text x="400" y="580" text-anchor="middle" class="stat-label">
+    Generated with ❤️ by GitHub Stats Generator
+  </text>
+</svg>
