@@ -2,7 +2,7 @@ import { fetchGitHubStats } from "./fetchStats.js";
 import { generateSVG } from "./generateSVG.js";
 import { saveFile, validateEnvironment } from "./helpers/utils.js";
 import { logger } from "./helpers/logger.js";
-import { join } from "path";
+import { join, basename } from "path";
 
 async function main() {
   try {
@@ -22,14 +22,18 @@ async function main() {
 
     await saveFile(svgPath, svgContent);
 
+    const repoName = process.env.GITHUB_REPOSITORY
+      ? process.env.GITHUB_REPOSITORY.split("/")[1]
+      : basename(process.cwd());
+
     logger.info("\n✨ Generation complete!");
     logger.info(`\n📍 Output location: ${svgPath}`);
     logger.info("\n📋 Embed in your README with:");
     logger.info(`
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/${username}/github-stats/main/assets/github-stats.svg?theme=dark">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/${username}/github-stats/main/assets/github-stats.svg?theme=light">
-  <img alt="GitHub Stats" src="https://raw.githubusercontent.com/${username}/github-stats/main/assets/github-stats.png" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/${username}/${repoName}/main/assets/github-stats.svg?theme=dark">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/${username}/${repoName}/main/assets/github-stats.svg?theme=light">
+  <img alt="GitHub Stats" src="https://raw.githubusercontent.com/${username}/${repoName}/main/assets/github-stats.png" />
 </picture>
     `);
   } catch (error) {
