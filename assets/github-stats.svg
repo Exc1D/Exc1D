@@ -103,7 +103,7 @@
     <rect class="card" width="140" height="60" rx="8"/>
     <text class="badge-icon" x="20" y="28">💻</text>
     <text class="stat-label" x="20" y="48">Commits</text>
-    <text class="stat-value" x="115" y="33" text-anchor="end">152</text>
+    <text class="stat-value" x="115" y="33" text-anchor="end">153</text>
   </g>
     
   <g transform="translate(20, 200)">
