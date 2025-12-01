@@ -6,7 +6,7 @@
 
 - 🔭 I'm currently working on **My own blog and portfolio site.**
 
-- 🌱 I'm currently learning **CS50x, The Odin Project, Scrimba, and freeCodeCamp courses.**
+- 🌱 I'm currently learning **The Odin Project, Scrimba, and freeCodeCamp courses.**
 
 - ⚡ Fun fact **I used to be a PMA Cadet (Philippine Military Academy).**
 
