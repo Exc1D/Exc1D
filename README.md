@@ -2,15 +2,15 @@
 
 ### Upcoming Full-stack developer
 
-- 💻 Coding since **October 2025**
+💻 Coding since **October 2025**
 
-- 🔭 I'm currently working on **My own blog and portfolio site.**
+🔭 Currently working on **My own portfolio site.**
 
-- 🌱 I'm currently learning **The Odin Project, Scrimba, and freeCodeCamp courses.**
+🌱 Still learning **The Odin Project, Scrimba, and freeCodeCamp courses.**
 
-- ⚡ Fun fact **I used to be a PMA Cadet (Philippine Military Academy).**
+⚡ Fun fact **I used to be a PMA Cadet (Philippine Military Academy).**
 
-- 📝 I regularly write articles on **[https://iexceed.xyz/](https://iexceed.xyz/)**
+📝 I regularly write articles on **[https://iexceed.xyz/](https://iexceed.xyz/)**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
