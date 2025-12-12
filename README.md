@@ -10,7 +10,7 @@
 
 ⚡ Fun fact **I used to be a PMA Cadet (Philippine Military Academy).**
 
-📝 I regularly write articles on **[https://iexceed.xyz/](https://iexceed.xyz/)**
+📝 I regularly write articles on **[my own blog](https://iexceed.xyz/)**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
